@@ -11,9 +11,9 @@
 			box-sizing: border-box;
 		/*	box-shadow: 0 0 50px #3F0C1F;  */
 		}
-		body {
+	/*	body {
 			margin: 0;
-		}
+		}	*/
 
 		/* ------------------------ Form Styling ------------------------- */
 		/*
@@ -491,7 +491,7 @@ a:hover {
 
 /* --------------------------- FLEXBOX CHALLENGE-3 --------------------------- */
 
-
+/*
 
 .container {
 	display: flex;
@@ -529,7 +529,145 @@ a:hover {
 #footer {
 	height: 20vh;
 	background-color: lightseagreen;
+}  */
+
+
+/* ------------------------- CSS GRID CHALLENGE-1 ------------------------------ */
+
+/*
+.container {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+	height: 100vh;
+	background-color: #2196F3;
+  	padding: 10px;
+  	gap: 10px;
+  	height: 100%;
 }
+
+.items {
+	background-color: rgba(255, 255, 255, 0.8);
+  	border: 1px solid rgba(0, 0, 0, 0.8);
+  	padding: 10px;
+  	text-align: center;
+}
+#item1 {
+	grid-row-start: 1;
+  	grid-row-end: 13;
+}
+#item2 {
+	grid-row-start: 1;
+	grid-row-end: 7;
+}
+#item3 {
+	grid-row-start: 7;
+	grid-row-end: 13;
+}
+#item4 {
+	grid-row-start: 1;
+	grid-row-end: 5;
+}
+#item5 {
+	grid-row-start: 5;
+	grid-row-end: 9;
+}
+#item6 {
+	grid-row-start: 9;
+	grid-row-end: 13;
+}
+#item7 {
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
+#item8 {
+	grid-row-start: 4;
+	grid-row-end: 7;
+}
+#item9 {
+	grid-row-start: 7;
+	grid-row-end: 10;
+}
+#item10 {
+	grid-row-start: 10;
+	grid-row-end: 13;
+}
+#item11 {
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+#item12{
+	grid-row-start: 3;
+	grid-row-end: 5;
+}
+#item13 {
+	grid-row-start: 5;
+	grid-row-end: 7;
+}
+#item14 {
+	grid-row-start: 7;
+	grid-row-end: 9;
+}
+#item15 {
+	grid-row-start: 9;
+	grid-row-end: 11;
+}
+#item16 {
+	grid-row-start: 11;
+	grid-row-end: 13;
+}	*/
+
+
+/* ------------------------------ CSS GRID CHALLENGE-2 -------------------------------- */
+
+.container {
+	display: grid;
+	grid-template-columns: 55px 55px 55px auto auto auto auto auto auto 55px 55px 55px;
+	grid-template-rows: 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px;
+	background-color: #2196F3;
+  	gap: 10px;
+  	height: 98vh;
+}
+
+.items {
+	background-color: rgba(255, 255, 255, 0.8);
+  	border: 1px solid rgba(0, 0, 0, 0.8);
+  	padding: 10px;
+  	font-size: 1.5em;
+  	font-weight: bold;
+  	text-align: center;
+}
+#nav {
+	grid-row-start: 1;
+	grid-row-end: 13;
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+#header {
+	grid-row-start: 1;
+	grid-row-end: 3;
+	grid-column-start: 4;
+	grid-column-end: 13;
+}
+#article {
+	grid-row-start: 3;
+	grid-row-end: 11;
+	grid-column-start: 4;
+	grid-column-end: 11;
+}
+#footer {
+	grid-row-start: 11;
+	grid-row-end: 13;
+	grid-column-start: 4;
+	grid-column-end: 13;
+}
+#ads {
+	grid-row-start: 3;
+	grid-row-end: 11;
+	grid-column-start: 11;
+	grid-column-end: 13;
+}
+
 
 
 	</style>
@@ -893,6 +1031,10 @@ a:hover {
 
 <!------------------------------------- FLEXBOX CHALLENGE-3 --------------------------------------->
 
+
+<!--
+
+
 <div class="container">
 
 	<div id="nav">
@@ -904,10 +1046,61 @@ a:hover {
 		<div class="haf" id="article">Article</div>
 		<div class="haf" id="footer">Footer</div>
 	</div>
+</div> 
+
+
+-->
+
+<!--------------------------------- CSS GRID CHALLENGE-1 --------------------------------->
+
+<!--
+
+<div class="container">
+	<div class="items" id="item1">1</div>
+	<div class="items" id="item2">2</div>
+	<div class="items" id="item3">3</div>
+	<div class="items" id="item4">4</div>
+	<div class="items" id="item5">5</div>
+	<div class="items" id="item6">6</div>
+	<div class="items" id="item7">7</div>
+	<div class="items" id="item8">8</div>
+	<div class="items" id="item9">9</div>
+	<div class="items" id="item10">10</div>
+	<div class="items" id="item11">11</div>
+	<div class="items" id="item12">12</div>
+	<div class="items" id="item13">13</div>
+	<div class="items" id="item14">14</div>
+	<div class="items" id="item15">15</div>
+	<div class="items" id="item16">16</div>
+	<div class="items" id="item17">17</div>
+	<div class="items" id="item18">18</div>
+	<div class="items" id="item19">19</div>
+	<div class="items" id="item20">20</div>
+	<div class="items" id="item21">21</div>
+	<div class="items" id="item22">22</div>
+	<div class="items" id="item23">23</div>
+	<div class="items" id="item24">24</div>
+	<div class="items" id="item25">25</div>
+	<div class="items" id="item26">26</div>
+	<div class="items" id="item27">27</div>
+	<div class="items" id="item28">28</div>
+
 </div>
 
+-->
 
 
+<!--------------------------------- CSS GRID CHALLENGE-2 ---------------------------------->
+
+
+<div class="container">
+	<div class="items" id="nav">Nav</div>
+	<div class="items" id="header">Header</div>
+	<div class="items" id="article">Article</div>
+	<div class="items" id="footer">Footer</div>
+	<div class="items" id="ads">Ads</div>
+	
+</div>
 
 
 </body>
