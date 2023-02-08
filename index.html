@@ -3,12 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/003fd1cf6f.js" crossorigin="anonymous"></script>
 	<title>Practice</title>
 	<style>
 
 		* {
 			box-sizing: border-box;
 		/*	box-shadow: 0 0 50px #3F0C1F;  */
+		}
+		body {
+			margin: 0;
 		}
 
 		/* ------------------------ Form Styling ------------------------- */
@@ -413,6 +417,8 @@ h2 {
 }  */
 
 /* ----------------------- FLEXBOX CHALLENGE-2 --------------------------- */
+
+/*
 #cover1 {
 	display: flex;
 	justify-content: center;
@@ -481,9 +487,49 @@ a:hover {
 	justify-content: space-around;
 
 
+}	*/
+
+/* --------------------------- FLEXBOX CHALLENGE-3 --------------------------- */
+
+
+
+.container {
+	display: flex;
 }
+#nav {
+	width: 20%;
+	background: lightgreen;
+	height: 100vh;
+	padding: 10px;
+	font-size: 1.5em;
+	font-weight: bolder;
 
-
+}
+#haf {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	background-color: lightgray;
+}
+.haf {
+	width: 100%;
+	padding: 10px;
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+#header {
+	height: 20vh;
+	background-color: deepskyblue;
+}
+#article {
+	height: 60vh;
+	background-color: lightcyan;
+}
+#footer {
+	height: 20vh;
+	background-color: lightseagreen;
+}
 
 
 	</style>
@@ -754,6 +800,8 @@ a:hover {
 -->
 
 <!------------------------------- FLEXBOX CHALLENGE-2 --------------------------------->
+
+<!-- 
 <div id="cover1">
 	<h1> SALIENT FEATURES </h1> 
 </div>
@@ -841,7 +889,23 @@ a:hover {
 		</div>
 	</div>
 
+</div> 		-->
+
+<!------------------------------------- FLEXBOX CHALLENGE-3 --------------------------------------->
+
+<div class="container">
+
+	<div id="nav">
+		Navbar
+	</div>
+
+	<div id="haf">
+		<div class="haf " id="header">Header</div>
+		<div class="haf" id="article">Article</div>
+		<div class="haf" id="footer">Footer</div>
+	</div>
 </div>
+
 
 
 
