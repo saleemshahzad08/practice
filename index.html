@@ -8,6 +8,7 @@
 
 		* {
 			box-sizing: border-box;
+		/*	box-shadow: 0 0 50px #3F0C1F;  */
 		}
 
 		/* ------------------------ Form Styling ------------------------- */
@@ -348,6 +349,7 @@ h2 {
 
 /* ------------------------- FLEXBOX CHALLENGE-1 ------------------------------- */
 
+/*
 
 .cover {
 	display: flex;
@@ -408,7 +410,80 @@ h2 {
 	background-color: steelblue;
 	border-radius: 2px;
 	padding: 5px 0px 5px 5px;
+}  */
+
+/* ----------------------- FLEXBOX CHALLENGE-2 --------------------------- */
+#cover1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 16vh;
+	background-image: linear-gradient(to right, rgba(150,0,0,0.8) , rgba(0,0,150,0.8));
+	margin-bottom: 20px;
 }
+
+h1 {
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	font-style: italic;
+	color: whitesmoke;
+}
+img {
+	width: 100%;
+	border-radius: 10px;
+}
+.h2_div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to right, rgba(150,0,0,0.8) , rgba(0,0,150,0.8));
+	color: whitesmoke;
+	border-radius: 5px;
+	margin: 5px;
+}
+p {
+	padding: 5px;
+	text-align: justify;
+}
+.a_div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+a {
+	text-decoration: none;
+	text-align: center;
+	padding: 5px;
+	display: block;
+	width: 100px;
+	background-image: linear-gradient(to right, rgba(150,0,0,0.8) , rgba(0,0,150,0.8));
+	border-radius: 5px;
+	color: whitesmoke;
+	margin-bottom: 10px;
+}
+a:hover {
+	background-image: linear-gradient(to right, #2E3192 , #1BFFFF);
+	font-size: 1.25em;
+}
+.banner {
+	width: 30%;
+	border: 1px solid lightgray;
+	box-shadow: 0 0 50px black;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	
+}
+.cover {
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+
+
+}
+
+
 
 
 	</style>
@@ -633,6 +708,7 @@ h2 {
 
 <!---------------------------- FLEXBOX CHALLENGE-1 ------------------------------->
 
+<!--
 <div id="cover1" class="cover">
 	<div id="b1c1" class="bc1"><div>1</div>
 		<div class="R1b1">
@@ -673,6 +749,98 @@ h2 {
 	<div class="bc3">3</div>
 	<div class="bc3">4</div>
 	<div class="bc3">5</div>
+</div>
+
+-->
+
+<!------------------------------- FLEXBOX CHALLENGE-2 --------------------------------->
+<div id="cover1">
+	<h1> SALIENT FEATURES </h1> 
+</div>
+
+<div class="cover">
+
+	<div class="banner">
+		<img src="images/1.jpeg">
+		<div class="h2_div">
+			<h2>H-1</h2>
+		</div>
+		<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+		<div class="a_div">
+			<a href="#"> B-1 </a>
+		</div>
+	</div>
+
+	<div class="banner">
+		<img src="images/2.jpg">
+		<div class="h2_div">
+			<h2>H-2</h2>
+		</div>
+		<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<div class="a_div">
+			<a href="#"> B-2 </a>
+		</div>
+	</div>
+
+	<div class="banner">
+		<img src="images/3.jpg">
+		<div class="h2_div">
+			<h2>H-3</h2>
+		</div>
+		<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<div class="a_div">
+			<a href="#"> B-3 </a>
+		</div>
+	</div>
+
+</div>
+
+<div class="cover">
+
+	<div class="banner">
+		<img src="images/4.jpg">
+		<div class="h2_div">
+			<h2>H-4</h2>
+		</div>
+		<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<div class="a_div">
+			<a href="#"> B-4 </a>
+		</div>
+	</div>
+
+	<div class="banner">
+		<img src="images/5.jpg">
+		<div class="h2_div">
+			<h2>H-5</h2>
+		</div>
+		<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<div class="a_div">
+			<a href="#"> B-5 </a>
+		</div>
+	</div>
+
+	<div class="banner">
+		<img src="images/6.jpg">
+		<div class="h2_div">
+			<h2>H-6</h2>
+		</div>
+		<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. 
+		</p>
+		<div class="a_div">
+			<a href="#"> B-6 </a>
+		</div>
+	</div>
+
 </div>
 
 
