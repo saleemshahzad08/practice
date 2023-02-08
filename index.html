@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Practice</title>
+	<style>
+
+		* {
+			box-sizing: border-box;
+		}
+
+		/* ------------------------ Form Styling ------------------------- */
+		/*
+		body {
+			background-image: url("bg.jpg");
+			background-size: cover;
+		}
+		h1 {
+			text-align: center;
+			color: whitesmoke;
+			font-weight: bolder;
+		}
+		h2 {
+			color: whitesmoke;
+			text-align: center;
+			font-weight: bolder;
+		}
+		hr {
+			color: darkred;
+			width: 66%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+
+		}
+		form {
+			background-image: linear-gradient(to right, rgba(150,0,0,0.8) , rgba(0,0,150,0.8));
+			padding: 20px;
+			border: 2px solid darkred;
+			border-radius: 20px;
+			margin: 20px;
+		}
+		.input, #address {
+			width: 95%;
+			border-radius: 2px;
+			border-color: rgb(66, 103, 178);
+			background-color: white;
+			margin-bottom: 15px;
+		}
+		#program, #combination {
+			width: 95%;
+		}
+		.fieldname, legend {
+			color: whitesmoke;
+		}
+		.sub_res {
+			font-size: 22px;
+			font-weight: bolder;
+			color: darkred;
+			width: 49.5%;
+			background-color: darkcyan;
+			border-radius: 10px;
+			text-align: center;
+			padding: 10px;
+			clear: both;
+		}
+		.dropdown {
+			padding: 5px;
+			width: 48%;
+			float: left;
+			text-align: center;
+			margin-bottom: 110px;
+		} 
+		p select option {
+			text-align: center;
+		}
+		select {
+			border-radius: 10px;
+			height: 35px;
+		}
+		.circle_pic {
+			clip-path: circle(35% at 45% 45%);
+			display: block;
+			width: 50%;
+			margin: auto;
+		} */
+
+		
+
+		/* ----------------------------- Responsiveness Challenge ------------------------------------ */
+
+		/*
+		div {
+			height: 25vh;
+			border: 1px solid black;
+			background-color: red;
+			text-align: center;
+			margin-bottom: 5px;
+		}
+
+    @media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    border: 1px solid black;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 31%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+    border: 1px solid black;
+  }
+  .col-sm-1 {
+    width: 8.33%;
+  }
+  .col-sm-2 {
+    width: 16.66%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33%;
+  }
+  .col-sm-5 {
+    width: 41.66%;
+  }
+  .col-sm-6 {
+    width: 48.65%;
+  }
+  .col-sm-7 {
+    width: 58.33%;
+  }
+  .col-sm-8 {
+    width: 66.66%;
+  }
+  .col-sm-9 {
+    width: 74.99%;
+  }
+  .col-sm-10 {
+    width: 83.33%;
+  }
+  .col-sm-11 {
+    width: 91.66%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  #box2 {
+    margin-right: 0px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    float: left;
+    border: 1px solid black;
+  }
+  .col-xs-1 {
+    width: 8.33%;
+  }
+  .col-xs-2 {
+    width: 16.66%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-4 {
+    width: 33.33%;
+  }
+  .col-xs-5 {
+    width: 41.66%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-7 {
+    width: 58.33%;
+  }
+  .col-xs-8 {
+    width: 66.66%;
+  }
+  .col-xs-9 {
+    width: 74.99%;
+  }
+  .col-xs-10 {
+    width: 83.33%;
+  }
+  .col-xs-11 {
+    width: 91.66%;
+  }
+  .col-xs-12 {
+    width: 100%;
+  }
+} */ 
+
+/* ------------------------ Position Challenge ------------------------------- */
+/*
+body {
+	margin: 0px;
+	padding: 0px;
+}
+div {
+	height: 25vh;
+	background: deepskyblue;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 1.8em;
+	color: whitesmoke;
+}
+
+header {
+	position: sticky;
+	top: 0;
+}
+nav {
+	width: 100%;
+	height: 50px;
+	background-color: darkcyan;
+	
+}
+a {
+	display: block;
+	padding-top: 12px;
+	color: whitesmoke;
+	text-decoration: none;
+	font-size: 1.3em;
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	float: left;
+
+}
+
+a:hover {
+	background-color: gold;
+	color: darkred;
+	font-weight: bolder;
+
+}
+p {
+	max-width: 700px;
+	width: 100%;
+	margin: auto;
+	text-align: justify;
+}
+h2 {
+	text-align: center;
+}
+
+*/
+
+/* ------------------------------ FLEXBOX MODEL ---------------------------------- */
+
+/*
+.container {
+	display: flex;
+	height: 90vh;
+	background-color: steelblue;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+
+}
+#b_1 {
+	width: 150px;
+	height: 100px;
+	margin: auto; 
+	background-color: blue;
+	color: whitesmoke;
+	text-align: center;
+	flex-basis: 230px; 
+	align-self: stretch; 
+}
+#b_2 {
+	width: 200px;
+	height: 100px;
+	background-color: hotpink;
+	color: whitesmoke;
+	text-align: center;
+	order: 1; 
+	align-self: flex-start; 
+}
+#b_3 {
+	width: 300px;
+	height: 100px;
+	background-color: darkgreen;
+	color: whitesmoke;
+	text-align: center;
+	align-self: flex-end; 
+}
+#b_4 {
+	width: 250px;
+	height: 100px;
+	background-color: red;
+	color: whitesmoke;
+	text-align: center;
+	align-self: center; 
+}
+.inner_flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+*/ 
+
+/* ------------------------- FLEXBOX CHALLENGE-1 ------------------------------- */
+
+
+.cover {
+	display: flex;
+	justify-content: space-around;
+}
+
+.bc1 {
+	width: 32.5%;
+	color: whitesmoke;
+	background-color: steelblue;
+	border-radius: 2px;
+	padding: 5px 5px 5px 5px;
+}
+#b1c1 {
+	display: block;
+}
+.inside_b1 {
+	background-color: whitesmoke;
+
+}
+.R1b1, .R2b1, .R3b1 {
+	display: flex;
+	justify-content: space-between;
+
+}
+.R1 {
+	color: black;
+	width: 32%;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 2px;
+}
+.R2 {
+	color: black;
+	width: 24%;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 2px;
+}
+.R3 {
+	color: black;
+	width: 18.75%;
+	padding: 5px;
+	border-radius: 2px;
+}
+.bc2 {
+	color: whitesmoke;
+	margin-top: 5px;
+	width: 24%;
+	background-color: steelblue;
+	border-radius: 2px;
+	padding: 5px 0px 5px 5px;
+}
+.bc3 {
+	color: whitesmoke;
+	margin-top: 5px;
+	width: 19%;
+	background-color: steelblue;
+	border-radius: 2px;
+	padding: 5px 0px 5px 5px;
+}
+
+
+	</style>
+</head>
+<body>
+<!--
+<form id="form" action="">
+	<h1> Registration </h1>
+	<p class="fieldname"> Required field are followed by * </p>
+	<h2> Personal Information </h2>
+	<p class="fieldname"> Name:* </p>
+	<input class="input" id="test" type="text" name="name" id="name" placeholder="Enter your name" required>
+	<p class="fieldname"> Father's Name:* </p>
+	<input class="input" type="text" name="fathername" id="fathername" placeholder="Enter your father's name" required>
+	<p class="fieldname"> Date of Birth:* </p>
+	<input class="input" type="date" name="dob" id="dob" placeholder="DD/MM/YYYY" required>
+	<p class="fieldname"> Roll No:* </p>
+	<input class="input" type="number" name="roll_no" id="roll_no" placeholder="Enter your CLASS roll number" required>
+	<fieldset id="gender">
+		<legend> Gender </legend>
+		<p class="fieldname">
+		Male <input type="radio" name="gender" id="male" required>
+		Female <input type="radio" name="gender" id="female" required>
+		Other <input type="radio" name="gender" id="other" required>
+		</p>
+	</fieldset>
+	<p class="fieldname"> Address </p>
+	<textarea name="address" id="address" rows="4" cols="80" placeholder="Enter your address"> </textarea>
+	<p class="fieldname"> Postal Code:* </p>
+	<input class="input" type="number" name="pincode" id="pincode" placeholder="Enter your postal code" required>
+	<p class="fieldname"> Email: </p>
+	<input class="input" type="email" name="email" id="email" placeholder="Enter a valid email address" required>
+	<h2> Academic Information </h2>
+	<p class="dropdown"> 
+		<select name="program" id="program" required>
+			<option value=""> --Select Your Program--</option>
+			<option value="fsc"> Fsc </option>
+			<option value="ics"> ICS </option>
+			<option value="fa"> FA </option>
+		</select>
+	</p>
+	<p class="dropdown"> 
+		<select name="combination" id="combination" required>
+			<option value=""> --Select Your Subjects--</option>
+			<option value="fscpreeng"> Physics, Chemistry, Mathematics </option>
+			<option value="fscpremed"> Physics, Chemistry, Biology </option>
+			<option value="icsp"> Physics, Mathematics, Computer </option>
+			<option value="icse"> Economics, Mathematics, Computer </option>
+			<option value="fa"> Islamiat, H &amp; P, Persian </option>
+		</select>
+	</p>
+	<input class="sub_res" type="submit" name="Submit">
+	<input class="sub_res" type="reset" name="Reset">
+</form>
+<img class="circle_pic" src="img.jpeg">
+
+-->
+
+
+
+
+
+<!--
+<div class="col-md-3 col-sm-6 col-xs-12"> BOX-1 </div>
+<div class="col-md-3 col-sm-6 col-xs-12"> BOX-2 </div>
+<div class="col-md-3 col-sm-6 col-xs-12"> BOX-3 </div>
+<div class="col-md-3 col-sm-6 col-xs-12"> BOX-4 </div>
+-->
+
+
+<!-----------------------------------POSITION CHALLENGE---------------------------------------->
+
+<!--
+
+
+
+
+<header>
+	<div id="header">
+		<h1> Test File </h1>
+	</div>
+	<nav>
+		<a href="#"> Home </a>
+		<a href="#"> Books </a>
+		<a href="#"> FAQ </a>
+	</nav>
+</header>
+
+
+
+<h2> PARAGRAPH-1 </h2>
+<p>
+	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<h2> PARAGRAPH-2 </h2>
+<p>
+	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<h2> PARAGRAPH-3 </h2>
+<p>
+	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<h2> PARAGRAPH-4 </h2>
+<p>
+	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+-->
+
+<!------------------------------FLEXBOX MODEL----------------------------------->
+
+<!--
+<div class="container">
+	<div id="b_1" class="inner_flex">
+		<h1>BOX-1</h1>
+	</div>
+	<div id="b_2" class="inner_flex">
+		<h1>BOX-2</h1>
+	</div>
+	<div id="b_3" class="inner_flex">
+		<h1>BOX-3</h1>
+	</div>
+	<div id="b_4" class="inner_flex">
+		<h1>BOX-4</h1>
+	</div> 
+</div>  -->
+
+<!---------------------------- FLEXBOX CHALLENGE-1 ------------------------------->
+
+<div id="cover1" class="cover">
+	<div id="b1c1" class="bc1"><div>1</div>
+		<div class="R1b1">
+			<div class="R1 inside_b1">1</div>
+			<div class="R1 inside_b1">2</div>
+			<div class="R1 inside_b1">3</div> 
+		</div>
+
+		<div class="R2b1">
+			<div class="R2 inside_b1">1</div>
+			<div class="R2 inside_b1">2</div>
+			<div class="R2 inside_b1">3</div>
+			<div class="R2 inside_b1">4</div> 
+		</div>
+
+		<div class="R3b1">
+			<div class="R3 inside_b1">1</div>
+			<div class="R3 inside_b1">2</div>
+			<div class="R3 inside_b1">3</div>
+			<div class="R3 inside_b1">4</div>
+			<div class="R3 inside_b1">5</div>
+		</div>
+	</div>
+	<div class="bc1">2</div>
+	<div class="bc1">3</div>
+</div>
+
+<div id="cover2" class="cover">
+	<div class="bc2">1</div>
+	<div class="bc2">2</div>
+	<div class="bc2">3</div>
+	<div class="bc2">4</div>
+</div>
+
+<div id="cover3" class="cover">
+	<div class="bc3">1</div>
+	<div class="bc3">2</div>
+	<div class="bc3">3</div>
+	<div class="bc3">4</div>
+	<div class="bc3">5</div>
+</div>
+
+
+
+
+</body>
+</html>
